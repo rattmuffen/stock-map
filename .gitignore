@@ -1,5 +1,15 @@
 # Project
+/App_Data
+/App_Start
+/Areas
+/bin
 /client/bower_components/
+/Content
+/Images
+/obj
+/Properties
+/Scripts
+/Views
 
 # Windows image file caches
 Thumbs.db
