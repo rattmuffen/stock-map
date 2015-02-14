@@ -43,15 +43,11 @@ app.controller('StockCtrl', function ($scope, $http) {
 				console.log('Got data!');
 				console.log(data);
 
-
-				/*
-				http://jsonplaceholder.typicode.com/users?callback=JSON_CALLBACK
-				$.each(data, function(index, user) {
+				$.each(data, function(index, company) {
 
 					// Add marker.
-					$scope.addMarker(user.address.geo.lat, user.address.geo.lng, user.name, user.company.bs);
+					$scope.addMarker(company.Location.Latitude, company.Location.Longitude, company.CompanyName, company.CompanyName + ' har sin stämma här');
 				});
-				*/
 			}).error(function (err) {
 				console.log('Error: ' + err);
 			});
