@@ -9,5 +9,6 @@ namespace stock_map.Models
     {
         public string CompanyName { get; set;}
         public Location Location { get; set; }
+        public string MarketSegment { get; set; }
     }
 }
