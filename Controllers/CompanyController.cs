@@ -1,4 +1,4 @@
-﻿using StockMapWebAPI.Models;
+﻿using stock_map.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace StockMapWebAPI.Controllers
+namespace stock_map.Controllers
 {
     public class CompanyController : ApiController
     {
