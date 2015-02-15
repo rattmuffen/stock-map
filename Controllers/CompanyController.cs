@@ -1,4 +1,5 @@
 ﻿using stock_map.Models;
+using stock_map.Models.Repos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,31 +11,11 @@ namespace stock_map.Controllers
 {
     public class CompanyController : ApiController
     {
-        public Company[] Get()
+        private CompanyRepository repo = new CompanyRepository();
+
+        public List<Company> GetAll()
         {
-            return new Company[]
-            {
-                new Company
-                {
-                    CompanyName = "Sectra",
-                    Location = new Location
-                    {
-                        City = "Linköping",
-                        Latitude = "58.39346",
-                        Longitude = "15.557192"
-                    }
-                },
-                new Company
-                {
-                    CompanyName = "Ericsson",
-                    Location = new Location
-                    {
-                        City = "Stockholm",
-                        Latitude= "59.404682",
-                        Longitude = "17.956033"
-                    }
-                }
-            };
+            return repo.getAll();
         }
     }
 }

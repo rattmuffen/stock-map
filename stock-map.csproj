@@ -167,6 +167,7 @@
     </Compile>
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\Location.cs" />
+    <Compile Include="Models\Repos\CompanyRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
